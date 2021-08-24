@@ -1,16 +1,19 @@
-import React from 'react'
+import React from "react";
+import Input from "./Input";
 
 const FormControl = (props) => {
-    const {control} = props
-    switch(control){
-        case 'input':
-        case 'textarea':
-        case 'select':
-        case 'radio':
-        case 'checkbox':
-        case 'date':
-        default: return null
-    }
-}
+  const { control, ...rest } = props;
+  switch (control) {
+    case "input":
+      return <Input {...rest} />;
+    case "textarea":
+    case "select":
+    case "radio":
+    case "checkbox":
+    case "date":
+    default:
+      return null;
+  }
+};
 
-export default FormControl
+export default FormControl;
