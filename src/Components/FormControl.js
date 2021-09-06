@@ -4,6 +4,7 @@ import RadioButton from "./RadioButton";
 import CheckboxGroup from "./CheckboxGroup";
 import Select from "./Select";
 import TextArea from "./TextArea";
+import DatePicker from "./DatePicker";
 
 const FormControl = (props) => {
   const { control, ...rest } = props;
@@ -19,6 +20,7 @@ const FormControl = (props) => {
     case "checkbox":
       return <CheckboxGroup {...rest} />;
     case "date":
+      return <DatePicker {...rest} />
     default:
       return null;
   }

@@ -4,13 +4,13 @@ import TextError from "./TextError";
 
 const CheckboxGroup = (props) => {
   const { label, name, options, ...rest } = props;
-  console.log(options);
+  // console.log(options);
   return (
-    <div>
+    <div className="form-control">
       <label htmlFor={name}>{label}</label>
       <Field name={name} {...rest}>
         {({ field }) => {
-          console.log("Field", field);
+          {/* console.log("Field", field); */}
           return options.map((option) => {
             return (
               <React.Fragment key={option.key}>
