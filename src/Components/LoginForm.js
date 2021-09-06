@@ -25,13 +25,13 @@ const LoginForm = () => {
         return (
           <Form>
             <FormControl
-              control="input"
+              control="chakrainput"
               type="email"
               label="Email"
               name="email"
             />
             <FormControl
-              control="input"
+              control="chakrainput"
               type="password"
               label="Password"
               name="password"

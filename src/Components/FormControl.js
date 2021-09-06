@@ -5,6 +5,7 @@ import CheckboxGroup from "./CheckboxGroup";
 import Select from "./Select";
 import TextArea from "./TextArea";
 import DatePicker from "./DatePicker";
+import ChakraInput from "./ChakraInput";
 
 const FormControl = (props) => {
   const { control, ...rest } = props;
@@ -20,7 +21,9 @@ const FormControl = (props) => {
     case "checkbox":
       return <CheckboxGroup {...rest} />;
     case "date":
-      return <DatePicker {...rest} />
+      return <DatePicker {...rest} />;
+    case "chakrainput":
+      return <ChakraInput {...rest} />;
     default:
       return null;
   }
