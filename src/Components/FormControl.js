@@ -1,5 +1,7 @@
 import React from "react";
 import Input from "./Input";
+import RadioButton from "./RadioButton";
+import CheckboxGroup from "./CheckboxGroup";
 import Select from "./Select";
 import TextArea from "./TextArea";
 
@@ -13,7 +15,9 @@ const FormControl = (props) => {
     case "select":
       return <Select {...rest} />;
     case "radio":
+      return <RadioButton {...rest} />;
     case "checkbox":
+      return <CheckboxGroup {...rest} />;
     case "date":
     default:
       return null;
